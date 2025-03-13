@@ -1,0 +1,22 @@
+[project]
+name = "rrbbpe"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Adrian Najera",email = "39295224+adriangitvitz@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy (>=2.2.3,<3.0.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "tqdm (>=4.67.1,<5.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "rrbbpe", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
