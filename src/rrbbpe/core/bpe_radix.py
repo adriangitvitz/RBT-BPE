@@ -1,5 +1,4 @@
 from collections import deque
-from threading import Lock
 from time import time
 
 
@@ -23,7 +22,6 @@ class RadixBalancedTree:
         self.cache = deque(maxlen=max_cache_size)
         self.id_map = {}
         self.next_id = 256
-        self.lock = Lock()
         self.byte_to_id = {bytes([i]): i for i in range(256)}
 
     def _insert(self, token_bytes, token_id):
